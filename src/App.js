@@ -14,6 +14,10 @@ import Form from './Component/Form';
 import CompoenentA from './Component/CompoenentA';
 import Table from './Component/Table';
 import ParComp from './Component/ParComp';
+import RefsDemo from './Component/RefsDemo';
+import FocusInput from './Component/FocusInput';
+import FRParentInput from './Component/FRParentInput';
+import PortalDemo from './Component/PortalDemo';
 
 function App() {
   return (
@@ -39,7 +43,11 @@ function App() {
       {/* <Form /> */}
       {/* <CompoenentA /> */}
       {/* <Table /> */}
-      <ParComp />
+      {/* <ParComp /> */}
+      {/* <RefsDemo /> */}
+      {/* <FocusInput /> */}
+      {/* <FRParentInput /> */}
+      <PortalDemo />
     </div>
   );
 }
