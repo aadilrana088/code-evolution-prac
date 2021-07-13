@@ -22,6 +22,10 @@ import Hero from "./Component/Hero";
 import ErrorBoundry from "./Component/ErrorBoundry";
 import ClickCounter from "./Component/ClickCounter";
 import HoverCounter from "./Component/HoverCounter";
+import User from "./Component/User";
+import ClickCounterRender from "./Component/ClickCounterRender";
+import HoverCounterRender from "./Component/HoverCounterRender";
+import CounterRender from "./Component/CounterRender";
 
 function App() {
   return (
@@ -61,8 +65,29 @@ function App() {
         <ErrorBoundry>
         <Hero heroname="Joker" />
       </ErrorBoundry> */}
-      <ClickCounter name="Clickargs"/>
+      {/* <ClickCounter name="Clickargs"/>
       <HoverCounter name="hoverargs"/>
+      <User render={(isLoggedIn)=> isLoggedIn ? "Aadil" : "Guest"}/> */}
+      {/* <ClickCounterRender />
+      <HoverCounterRender /> */}
+      <CounterRender>
+      {
+        (count,increamentCount) => (
+          <ClickCounterRender count={count} increamentCount = {increamentCount} />
+        )
+      }
+      </CounterRender>
+      <CounterRender>
+      {
+        (count,increamentCount) => (
+          <HoverCounterRender count={count} increamentCount = {increamentCount} />
+        )
+      }
+      </CounterRender>
+        {/* <CounterRender render={
+        (count,increamentCount) => (
+          <HoverCounterRender count={count} increamentCount = {increamentCount} />
+        )} /> */}
     </div>
   );
 }
